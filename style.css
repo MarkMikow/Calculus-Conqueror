@@ -1,16 +1,24 @@
-body {
+.container-fluid {
+  background-color: #606;
+}
+
+.container {
+  width: auto;
   background-color: #800080;
+  margin: 2em;
+  border-radius: 5%;
 }
 
 header {
-  margin: 3em 0 0 0;
+  margin: 2em 0 0 0;
   width: auto;
   /*border: 3px solid black;*/
 }
 
 #castle1 {
+  margin-top: 5em;
   text-align: left;
-  padding-left: 3em;
+  padding-left: 5em;
   overflow: auto;
 }
 
@@ -19,25 +27,30 @@ h1 {
   text-align: center;
   padding-top: 15px;
   font-family: "Luckiest Guy";
-  font-size: 5em;
+  font-size: 7em;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
 }
 
 #castle2 {
+  margin-top: 5em;
   text-align: right;
-  padding-right: 3em;
+  padding-right: 5em;
   overflow: auto;
 }
 
 #sub-header {
   text-align: center;
   font-family: "Permanent Marker", cursive;
-  font-size: 2.5em;
+  font-size: 3em;
   color: #e6e600;
   /*border: 3px solid black;*/
   line-height: 1;
+}
+
+#knightAndCastles {
+  margin-top: 2em;
 }
 
 #knight {
@@ -47,16 +60,30 @@ h1 {
 
 .questionContainer {
   min-height: 500px;
-  margin: 3em 20em;
-  padding: 2em;
+  min-width: 300px;
+  margin: 12em 7% 0 7%;
+  padding: 2em 0 0 1em;
   border: 3px solid #000; 
   background-color: #fff; 
   border-radius: 10px;
+  font-size: 2em;
+  font-family: Times New Roman;
+}
+
+#submit-button {
+  margin-top: 7px;
+  text-align: center;
+}
+
+#next-button {
+  margin-top: 7px;
+  text-align: center;
 }
 
 #footer {
   text-align: center;
   font-family: Times New Roman;
   font-weight: bold;
+  padding-top: 2em;
   padding-bottom: 1em;
 }

@@ -11,38 +11,53 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker|Luckiest+Guy" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
+  <div class="container-fluid">
+  <div class="container">
   <header>
-    <div class="row">
-      <div class="col-xs-2" id="castle1">
-        <a title="By drini (Image:Morado-comunero.jpg) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AFlag_of_Castile_(purple).svg"><img width="200" alt="Flag of Castile (purple)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Castile_%28purple%29.svg/512px-Flag_of_Castile_%28purple%29.svg.png"/></a>
-      </div>
-      <div class="col-xs-8">
-        <h1>Calculus Conqueror</h1>   
-      </div>
-      <div class="col-xs-2" id="castle2">
-        <a title="By drini (Image:Morado-comunero.jpg) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AFlag_of_Castile_(purple).svg"><img width="200" alt="Flag of Castile (purple)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Castile_%28purple%29.svg/512px-Flag_of_Castile_%28purple%29.svg.png"/></a>
-      </div>
-    </div>  
+    <h1>Calculus Conqueror</h1> 
+
   </header>
   <div id="sub-header">
     <p>Conquer Your Fears!</p>
     <p>Increase Your Skills!!</p>
     <p>Summit the Heights of Your Mind!!!</p>
   </div>
-  <div id="knight">
-    <img width="200" alt="knight" src="http://images.clipartpanda.com/knight-clipart-knight7.png#.WYYvRVMrHcs.link">
-  </div>
+
+
+  <div class="row" id="knightAndCastles">
+    <div class="col-xs-4" id="castle1">
+      <a title="By drini (Image:Morado-comunero.jpg) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AFlag_of_Castile_(purple).svg"><img width="300" alt="Flag of Castile (purple)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Castile_%28purple%29.svg/512px-Flag_of_Castile_%28purple%29.svg.png"/></a>
+    </div>
+    <div class="col-xs-4">
+      <div id="knight">
+        <img width="300" alt="knight" src="http://images.clipartpanda.com/knight-clipart-knight7.png#.WYYvRVMrHcs.link">
+      </div>
+    </div>
+    <div class="col-xs-4" id="castle2">
+      <a title="By drini (Image:Morado-comunero.jpg) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AFlag_of_Castile_(purple).svg"><img width="300" alt="Flag of Castile (purple)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Castile_%28purple%29.svg/512px-Flag_of_Castile_%28purple%29.svg.png"/></a>
+    </div>
+
   <div class="questionContainer">
-    <p>Random Mulitple Choice questions will go in this space.</p>
-    <p>Each question will have 4 possible answers, with radio buttons.</p>
-    <p>There will be a submit button. When hit:<br>if answer is correct, a box will appear proclaiming "YAY! You conquered that question!"<br>else, "Oops, would you like to"</p>
-    <p><em>Try again!</em><br><em>Get a hint!</em><br><em>Move on!</em> - each of these three choices will be a button.</p><p>A box will also appear below, telling them their total score.</p><p>Penultimately, this site will be organized such that the student is able to choose questions from specific calculus topics, sub-topics, or random.</p><p>Ultimately, it will be a game, with different amounts of points given, corresponding to the  level of difficulty of the questions.</p><p>The purpose of this site is to help high school students practice for the AP Calculus AB and BC exams.<br>The questions are modeled after those that have appeared on previous exams. (The actual questions are copyrighted by the CollegeBoard.)
+    <span class="question"></span> 
   </div>
+    <div class="row">
+      <div class="col-xs-6" id="submit-button">
+        <button type="button" class="btn-btn-success btn-lg" type="submit" id="submit">Submit</button>
+      </div>
+      <div class="col-xs-6" id="next-button">
+        <button type="button" class="btn-btn-success btn-lg" type="submit" id="newQuestion">Next</button>
+      </div>
+  </div>
+
   <div id="footer">
     <p>Copyright &copy;2017 Mark Mikow. All Rights Reserved.</p>
+  </div>
+  </div>
+  </div>
   </div>
 </body>
 </html>
